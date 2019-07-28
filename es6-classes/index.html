@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script src="./main.js"></script>
+</head>
+<body>
+
+<ol id="items">
+
+
+</ol>
+<script>
+
+        let Iarr=[];
+        Iarr[0]=new BaseItem("item 1");
+        Iarr[1]=new StyledItem("item 2","color:red; border: 1px solid blue;");
+        Iarr[2]=new RedBackgroundItem("item 3");
+        for (var i = 0; i < Iarr.length; i++) {
+            Iarr[i].draw();
+        }
+
+       /* let i1 = new BaseItem("item 1");
+        i1.draw();
+
+        let i2= new StyledItem("item 2","color:red; border: 1px solid blue;");
+        i2.draw();
+*/
+</script>
+
+</body>
+</html>
